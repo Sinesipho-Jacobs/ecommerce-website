@@ -14,7 +14,7 @@ body {
 
 /* Align vertically and horizontally center */
 .container {
-    width: 65%;
+    /* width: 65%; */
     margin: 0;
     position: absolute;
     top: 50%;
@@ -37,9 +37,8 @@ body {
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 12px 12px 30px gray;
-    height: 80vh;
-    width: auto;
-
+    /* height: 80vh;
+    width: auto; */
 }
 
 /* Add margin above signin-description paragraph and on the input boxes*/
