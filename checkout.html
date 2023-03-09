@@ -57,15 +57,15 @@
               <li class="nav-item">
                 <!-- Link--><a class="nav-link" href="detail.html">Product detail</a>
               </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#"
+              <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#"
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                <!-- <div class="dropdown-menu mt-3 shadow-sm" aria-labelledby="pagesDropdown"><a
+                <div class="dropdown-menu mt-3 shadow-sm" aria-labelledby="pagesDropdown"><a
                     class="dropdown-item border-0 transition-link" href="index.html">Homepage</a><a
                     class="dropdown-item border-0 transition-link" href="shop.html">Category</a><a
                     class="dropdown-item border-0 transition-link" href="detail.html">Product detail</a><a
                     class="dropdown-item border-0 transition-link" href="cart.html">Shopping cart</a><a
-                    class="dropdown-item border-0 transition-link" href="checkout.html">Checkout</a></div> -->
-              </li>
+                    class="dropdown-item border-0 transition-link" href="checkout.html">Checkout</a></div>
+              </li> -->
             </ul>
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><a class="nav-link" href="cart.html"> <i
@@ -104,7 +104,7 @@
                     <li class="list-inline-item m-0 4"><i class="fas fa-star small text-warning"></i></li>
                   </ul>
                   <h2 class="h4">Red digital smartwatch</h2>
-                  <p class="text-muted">$250</p>
+                  <p class="text-muted">R250</p>
                   <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper
                     leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur
                     ridiculus mus. Vestibulum ultricies aliquam convallis.</p>
@@ -133,7 +133,7 @@
     </div>
     <div class="container">
       <!-- HERO SECTION-->
-      <section class="py-5">
+      <!-- <section class="py-5">
         <div class="container" id="checkout">
           <div class="row px-4 px-lg-5 py-lg-4 align-items-center">
             <div class="col-lg-6">
@@ -150,6 +150,25 @@
             </div>
           </div>
         </div>
+      </section> -->
+      <!-- HERO SECTION-->
+      <section class="py-5" id="cart">
+        <div class="container">
+          <div class="row px-4 px-lg-5 py-lg-4 align-items-center">
+            <div class="col-lg-6">
+              <h1 class="h2 text-uppercase mb-0">Checkout</h1>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-lg-end mb-0 px-0 ">
+                  <li class="breadcrumb-item"><a class="text-dark" href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a class="text-dark" href="cart.html">Cart</a></li>
+                  <li class="breadcrumb-item" aria-current="page" id="bread">Checkout</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="py-5">
         <!-- BILLING ADDRESS-->
@@ -159,14 +178,15 @@
             <form action="#">
               <div class="row gy-3">
                 <div class="col-lg-6">
-                  <label class="form-label text-sm text-uppercase" for="firstName">Full Name </label>
+                  <label class="form-label text-sm text-uppercase" for="firstName">First Name </label>
                   <input class="form-control form-control-lg" type="text" id="firstName"
                     placeholder="Enter your first name">
                 </div>
-                <!-- <div class="col-lg-6">
-                    <label class="form-label text-sm text-uppercase" for="lastName">Last name </label>
-                    <input class="form-control form-control-lg" type="text" id="lastName" placeholder="Enter your last name">
-                  </div> -->
+                <div class="col-lg-6">
+                  <label class="form-label text-sm text-uppercase" for="lastName">Last name </label>
+                  <input class="form-control form-control-lg" type="text" id="lastName"
+                    placeholder="Enter your last name">
+                </div>
                 <div class="col-lg-6">
                   <label class="form-label text-sm text-uppercase" for="email">Email address </label>
                   <input class="form-control form-control-lg" type="email" id="email"
@@ -219,10 +239,10 @@
                 <div class="col-lg-6">
                   <button class="btn btn-link text-dark p-0 shadow-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#alternateAddress">
-                    <div class="form-check">
+                    <!-- <div class="form-check">
                       <input class="form-check-input" id="alternateAddressCheckbox" type="checkbox">
                       <label class="form-check-label" for="alternateAddressCheckbox">Alternate billing address</label>
-                    </div>
+                    </div> -->
                   </button>
                 </div>
                 <div class="collapse" id="alternateAddress">
@@ -284,8 +304,9 @@
                 </div>
                 <div class="row gy-3">
                   <div class="col-12 mt-4">
-                    <h2 class="h4 text-uppercase mb-4">Alternative billing details</h2>
+                    <h2 class="h4 text-uppercase mb-4">Payment Details</h2>
                   </div>
+
                   <div class="inputBox">
                     <span><strong> Cards Accepted :</strong></span>
                     <img src="images/card_img.png" alt="">
@@ -338,8 +359,10 @@
                   </div> -->
                 </div>
                 <div class="col-lg-12 form-group">
-                  <button class="btn btn-dark" type="submit">Place order</button>
+                  <button class="btn btn-success" type="submit">Place order</button>
+                  <!-- <input type="submit" value="Place order" class="submit-btn" style> -->
                 </div>
+
               </div>
             </form>
           </div>
@@ -350,13 +373,13 @@
                 <h5 class="text-uppercase mb-4">Your order</h5>
                 <ul class="list-unstyled mb-0">
                   <li class="d-flex align-items-center justify-content-between"><strong class="small fw-bold">Red
-                      digital smartwatch</strong><span class="text-muted small">$250</span></li>
+                      digital smartwatch</strong><span class="text-muted small">R1 300</span></li>
                   <li class="border-bottom my-2"></li>
-                  <li class="d-flex align-items-center justify-content-between"><strong class="small fw-bold">Gray Nike
-                      running shoes</strong><span class="text-muted small">$351</span></li>
+                  <li class="d-flex align-items-center justify-content-between"><strong class="small fw-bold">Apple
+                      watch</strong><span class="text-muted small">R2 900</span></li>
                   <li class="border-bottom my-2"></li>
                   <li class="d-flex align-items-center justify-content-between"><strong
-                      class="text-uppercase small fw-bold">Total</strong><span>$601</span></li>
+                      class="text-uppercase small fw-bold">Total</strong><span>R4 200</span></li>
                 </ul>
               </div>
             </div>
